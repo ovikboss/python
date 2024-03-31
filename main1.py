@@ -2,8 +2,7 @@ import smtplib
 from email.mime.text import MIMEText
 
 def send_email(massage):
-    sender="bloodysimonyan@yandex.ru"
-    password="Simonyan99"
+   
     server=smtplib.SMTP("smtp.yandex.ru",587)
     server.starttls()
 
