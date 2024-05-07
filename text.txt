@@ -1,0 +1,8 @@
+12:40, For tea, income, 100 
+12:41, buy cofe, expense, -50 
+14:37, Job, income, 4000 
+15:00, xz, expense, -400 
+15:43, v i t, expense, -300 
+15:43, v i t, expense, -300 
+15:43, v i t, expense, -300 
+15:43, v i t, expense, -300 
