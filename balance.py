@@ -37,6 +37,13 @@ def addOper():
    operation=CheckBalance(time,desc,tyoper,value)
    operations.append(operation)
 
+def removeOper():
+    a=int(input("Какую операцию удалить"))
+    for oper in operations:
+        if operations.index(oper)==a:
+            operations.remove(oper)
+    
+
 def showBal(List):
    result=0
    for bal in List:
@@ -62,10 +69,11 @@ for t in text:
 
 
 for x in operations:
+    print(operations.index(x))
     print(x.show())
 
 print(showBal(operations))
-
+removeOper()
 
 with open("text.txt","w")as f:
    for oper in operations:
