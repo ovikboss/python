@@ -15,6 +15,8 @@ class CheckBalance(object):
 
     def show(self,): 
        return self.Value,self.Time,self.Description,self.TyOper
+
+
 def searchopertime():
     time=input("Какой время вас интересует ")
     result=[]
@@ -26,6 +28,8 @@ def searchopertime():
     for x in result:
         print(x.show())
 
+
+
 def addOper():
    time=input("Время операции ")
    desc=input("Описание ")
@@ -36,6 +40,7 @@ def addOper():
        tyoper="expense"
    operation=CheckBalance(time,desc,tyoper,value)
    operations.append(operation)
+
 
 def removeOper():
     a=int(input("Какую операцию удалить"))
@@ -61,6 +66,8 @@ text=text.splitlines()
  
 
 operations=[]
+
+
 for t in text:
     operation=CheckBalance(*t.split(", "))
     operations.append((operation))
@@ -73,7 +80,11 @@ for x in operations:
     print(x.show())
 
 print(showBal(operations))
+
+
 removeOper()
+
+addOper()
 
 with open("text.txt","w")as f:
    for oper in operations:
@@ -81,7 +92,7 @@ with open("text.txt","w")as f:
 
 print(searchopertime())
 
-#addOper()
+
 
 
 
